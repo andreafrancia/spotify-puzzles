@@ -12,6 +12,8 @@ class TestSong(unittest.TestCase):
 		assert self.song.__repr__() == 'yellow_submarine'
 	
 	def testFi(self):
+                # non sembra un value object, forse ci sono due responsabilità 
+                # dentro Song
 		self.song.fi = 1.23
 		assert self.song.fi == 1.23
 

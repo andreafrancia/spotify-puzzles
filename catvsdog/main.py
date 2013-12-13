@@ -6,6 +6,7 @@ if __name__=='__main__':
 	lines = []
 	for line in sys.stdin:
 		lines.append(line)
+        # tutto questo codice non è testato
 	lines.reverse()
 	
 	cases = int(lines.pop())

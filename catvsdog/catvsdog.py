@@ -5,6 +5,7 @@ class Vote:
 		self.collisionsId = []
 		self.edge = None
 
+        # in python non si mette get davanti ai getter
 	def getFamily(self):
 		return self.keepName[0]
 
@@ -12,7 +13,9 @@ class Vote:
 		if vote.throwName == self.keepName: return False
 		if vote.keepName == self.throwName: return False		
 		return True
-	
+
+        # in python non si usa il camelCase, si usa lo snake_case
+        # è spiegato nella PEP8
 	def addCollisionId(self, vote):
 		self.collisionsId.append(vote.nodeId)
 

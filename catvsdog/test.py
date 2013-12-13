@@ -13,6 +13,7 @@ class TestVote(unittest.TestCase):
 		assert self.vote.throwName == 'C1'
 	
 	def testFamily(self):
+                # c'e' molto ask e poco tell in queste classi
 		assert Vote('D1', 'C1').getFamily() == 'D'
 		assert Vote('C1', 'D1').getFamily() == 'C'
 	

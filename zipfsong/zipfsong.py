@@ -1,5 +1,7 @@
 class Album:
 	def __init__(self, totalSongs, selectSongs):
+                # è curioso che converti con int() non capisco perché.
+                # 
 		self.totalSongs = int(totalSongs)
 		self.selectSongs = int(selectSongs)
 		self.songs = []
@@ -23,5 +25,7 @@ class Song:
 		self.playcount = int(playcount)
 		self.title = title
 
+        # repr dovrebbe restituire una rappresentazione del contenuto
+        # qui lo stai usando come una __str__
 	def __repr__(self):
 		return self.title
